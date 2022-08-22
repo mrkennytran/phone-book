@@ -14,12 +14,12 @@
                 <a href="#">
                     <!--add img tag here-->
                 </a>
-                <ul>
+                <!--<ul>
                     <li><a href="index.php">Home</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">About Me</a></li>
                     <li><a href="#">Contact</a></li>
-                </ul>
+                </ul>-->
                 <form action="includes/login.inc.php" method="post">
                     <!--CREATE AN INCLUDES FOLDER IN MAIN LOGIN PROJECT FOLDER-->
                     <input type="text" name="mailuid" placeholder="UserName/E-mail...">

@@ -5,7 +5,7 @@
     <main>
         <div class="wrapper-main">
             <section class="section-default">
-                <h1>Signup</h1>
+                <h1>Register</h1>
                 <?php
                     if(isset($_GET["error"])){
                         if($_GET["error"] == "emptyfields"){
