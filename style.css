@@ -116,6 +116,7 @@ header {
   text-align: center;
 }
 
+
 main {
   padding-top: 20px;
 }
@@ -189,4 +190,14 @@ h1 {
   font-size: 16px;
   color: green;
   text-align: center;
+}
+
+/*Added by me*/
+.switchtosignin{
+  padding-top: 14px;
+  text-align: center;
+}
+
+.switchtosignin a{
+  text-decoration: underline;
 }

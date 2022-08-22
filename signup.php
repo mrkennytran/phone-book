@@ -1,6 +1,16 @@
 <?php
-    require "header.php";
+    //require "header.php";
 ?>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="description" content="This is an example of a meta description. This will often show up in search results.">
+        <link rel="stylesheet" href="style.css">
+        <title>Phone Book: Register</title>
+
+    </head>
 
     <main>
         <div class="wrapper-main">
@@ -35,12 +45,16 @@
                     <input type="text" name="mail" placeholder="E-mail">    
                     <input type="password" name="pwd" placeholder="Password">    
                     <input type="password" name="pwd-repeat" placeholder="Repeat password">    
-                    <button type="submit" name="signup-submit">Signup</button>
+                    <button type="submit" name="signup-submit">Sign up</button>
                 </form>
+
+                <p class="switchtosignin">Already have an account? Click <a href="www.google.com">Here</a>.</p>
             </section>
         </div>
     </main>
 
-<?php
-    require "footer.php";
-?>
+    <?php
+        require "footer.php";
+    ?>
+
+</html>
