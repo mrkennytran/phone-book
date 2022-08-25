@@ -193,11 +193,12 @@ h1 {
 }
 
 /*Added by me*/
-.switchtosignin{
+.signup-tosignin{
   padding-top: 14px;
+  width: 100%;
   text-align: center;
 }
 
-.switchtosignin a{
+.signup-tosignin a{
   text-decoration: underline;
 }

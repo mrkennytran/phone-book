@@ -34,7 +34,6 @@
                         </form>';
                     } else {
                         echo '<form action="includes/login.inc.php" method="post">
-                        <!--CREATE AN INCLUDES FOLDER IN MAIN LOGIN PROJECT FOLDER-->
                         <input type="text" name="mailuid" placeholder="UserName/E-mail...">
                         <input type="password" name="pwd" placeholder="Password...">
                         <button type="submit" name="login-submit">Login</button>

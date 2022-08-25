@@ -45,10 +45,10 @@
                     <input type="text" name="mail" placeholder="E-mail">    
                     <input type="password" name="pwd" placeholder="Password">    
                     <input type="password" name="pwd-repeat" placeholder="Repeat password">    
-                    <button type="submit" name="signup-submit">Sign up</button>
+                    <button type="submit" name="signup-submit">Sign up</button> <!-- signup button here --> 
                 </form>
 
-                <p class="switchtosignin">Already have an account? Click <a href="www.google.com">Here</a>.</p>
+                <p class="signup-tosignin">Already have an account? Click <a href="login.php">Here</a>.</p>
             </section>
         </div>
     </main>
