@@ -193,12 +193,12 @@ h1 {
 }
 
 /*Added by me*/
-.signup-tosignin{
+.home-switchentry{
   padding-top: 14px;
   width: 100%;
   text-align: center;
 }
 
-.signup-tosignin a{
+.home-switchentry a{
   text-decoration: underline;
 }

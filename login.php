@@ -1,6 +1,6 @@
 <!-- Insert html and php  -->
 
-<<html>
+<html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -15,34 +15,31 @@
             <section class="section-default">
                 <h1>Sign-In</h1>
                 <?php
-                    if(isset($_GET["error"])){
-                        if($_GET["error"] == "emptyfields"){
-                            echo '<p class="signuperror">Fill in all fields!</p>';
-
-                        } else if($_GET["error"] == "invaliduidmail"){
-                            echo '<p class="signuperror">Invalid username and e-mail!</p>';
-
-                        } else if($_GET["error"] == "invaliduid"){
-                            echo '<p class="signuperror">Invalid username!</p>';
-
-                        } else if($_GET["error"] == "invalidmail"){
-                            echo '<p class="signuperror">Invalid e-mail!</p>';
-
-                        }else if($_GET["error"] == "passwordcheck"){
-                            echo '<p class="signuperror">Your passwords do not match!</p>';
-
-                        }else if($_GET["error"] == "usertaken"){
-                            echo '<p class="signuperror">Username is already taken!</p>';
-                        }
-                    } else if(isset($_GET["signup"])){
-                        echo '<p class="signupsuccess">Signup successful!</p>';
+/*
+                if(isset($_GET["error"])){
+                    if($_GET["error"] == "emptyfields"){
+                        echo '<p class="signuperror">Fill in all fields!</p>';
                     }
+                } else if(isset($_GET["signup"])){
+                    require 'header.php';
+                    echo '<p class="signupsuccess">Welcome Back!</p>';
+                }
+*/
+                if(isset($_SESSION['userId'])){
+                    echo '<form action="includes/logout.inc.php" method="post">
+                    <button type="submit" name="logout-submit">Logout</button>
+                    </form>';
+                } else {
+                    echo '<form class="form-signup" action="includes/login.inc.php" method="post">
+                    <!--CREATE AN INCLUDES FOLDER IN MAIN LOGIN PROJECT FOLDER-->
+                    <input type="text" name="mailuid" placeholder="UserName/E-mail">
+                    <input type="password" name="pwd" placeholder="Password">
+                    <button type="submit" name="login-submit">Login</button>
+                </form>';
+                }
                 ?>
-                <form class="form-signup" action="includes/signup.inc.php" method="post"> 
-                    <input type="text" name="uid" placeholder="Username">    
-                    <input type="password" name="pwd" placeholder="Password">    
-                    <button type="submit" name="signup-submit">Sign in</button> <!-- signup button here --> 
-                </form>
+
+                <p class="home-switchentry">Don't have an account? Click <a href="signup.php">Here</a>.</p>
 
             </section>
         </div>

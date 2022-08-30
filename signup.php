@@ -48,7 +48,7 @@
                     <button type="submit" name="signup-submit">Sign up</button> <!-- signup button here --> 
                 </form>
 
-                <p class="signup-tosignin">Already have an account? Click <a href="login.php">Here</a>.</p>
+                <p class="home-switchentry">Already have an account? Click <a href="login.php">Here</a>.</p>
             </section>
         </div>
     </main>
