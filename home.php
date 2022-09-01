@@ -1,34 +1,21 @@
-<?php 
-
-
-    require "signup.php"
-    echo "hello world";
-?>
-
-
-
-
-
-
-
 <?php
-    //require "header.php";
+    require "header.php";
 ?>
 
-    <!--<main>
+    <main>
         <div class="wrapper-main">
             <section class="section-default">
                 <?php 
-                    /*if(isset($_SESSION['userId'])){
+                    if(isset($_SESSION['userId'])){
                         echo '<p class="login-status">You are logged in!</p>';
                     } else {
                         echo '<p class="login-status">You are logged out!</p>';
-                    }*/
+                    }
                 ?>
             </section>
         </div>
-    </main>-->
+    </main>
 
 <?php
-    //require "footer.php";
+    require "footer.php";
 ?>

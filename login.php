@@ -15,28 +15,18 @@
             <section class="section-default">
                 <h1>Sign-In</h1>
                 <?php
-/*
-                if(isset($_GET["error"])){
-                    if($_GET["error"] == "emptyfields"){
-                        echo '<p class="signuperror">Fill in all fields!</p>';
-                    }
-                } else if(isset($_GET["signup"])){
-                    require 'header.php';
-                    echo '<p class="signupsuccess">Welcome Back!</p>';
-                }
-*/
-                if(isset($_SESSION['userId'])){
-                    echo '<form action="includes/logout.inc.php" method="post">
-                    <button type="submit" name="logout-submit">Logout</button>
+                    if(isset($_SESSION['userId'])){
+                        echo '<form action="includes/logout.inc.php" method="post">
+                        <button type="submit" name="logout-submit">Logout</button>
+                        </form>';
+                    } else {
+                        //CREATE AN INCLUDES FOLDER IN MAIN LOGIN PROJECT FOLDER
+                        echo '<form class="form-signup" action="includes/login.inc.php" method="post">
+                        <input type="text" name="mailuid" placeholder="UserName/E-mail">
+                        <input type="password" name="pwd" placeholder="Password">
+                        <button type="submit" name="login-submit">Login</button>
                     </form>';
-                } else {
-                    echo '<form class="form-signup" action="includes/login.inc.php" method="post">
-                    <!--CREATE AN INCLUDES FOLDER IN MAIN LOGIN PROJECT FOLDER-->
-                    <input type="text" name="mailuid" placeholder="UserName/E-mail">
-                    <input type="password" name="pwd" placeholder="Password">
-                    <button type="submit" name="login-submit">Login</button>
-                </form>';
-                }
+                    }
                 ?>
 
                 <p class="home-switchentry">Don't have an account? Click <a href="signup.php">Here</a>.</p>
