@@ -1,8 +1,5 @@
 <?php 
-
-
-    require "signup.php"
-    echo "hello world";
+    require "signup.php";
 ?>
 
 

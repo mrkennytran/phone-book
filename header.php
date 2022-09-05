@@ -40,7 +40,7 @@
                         </form>';
                         }
                     ?>
-                    <a href="signup.php" class="header-signup">Signup</a>
+                    <!--<a href="signup.php" class="header-signup">Signup</a>-->
 
 
                 </div>

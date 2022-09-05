@@ -55,7 +55,9 @@ if(isset($_POST['signup-submit'])) { //*** 37:00
 
                     mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hashedPwd); //switched $password to $hashedPwd for user pw protection                 
                     mysqli_stmt_execute($stmt); //run stmt inside db
-                    header("Location: ../signup.php?signup=success");
+
+                    //Signup success: redirect to home page 
+                    header("Location: ../home.php?signup=success");
                     exit();            
                 }
             }

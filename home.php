@@ -8,8 +8,14 @@
                 <?php 
                     if(isset($_SESSION['userId'])){
                         echo '<p class="login-status">You are logged in!</p>';
+                    } //else {
+                        //echo '<p class="login-status">You are logged out!</p>';
+                    //} //remove else statement 
+
+                    if(true){
+                        echo "<p>You currently have no records</p>";
                     } else {
-                        echo '<p class="login-status">You are logged out!</p>';
+                        
                     }
                 ?>
             </section>
