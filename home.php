@@ -12,8 +12,11 @@
                         //echo '<p class="login-status">You are logged out!</p>';
                     //} //remove else statement 
 
+                    //INSERT SELECT SQL HERE 
+                    $record = require "create.inc.php";
+
                     if(true){
-                        echo "<p>You currently have no records</p>";
+                        echo "<p class='login-status'>You currently have no records</p>";
                     } else {
                         
                     }
