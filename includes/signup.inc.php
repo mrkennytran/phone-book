@@ -14,10 +14,11 @@ if(isset($_POST['signup-submit'])) { //*** 37:00
         header("Location: ../signup.php?error=emptyfields&uid=".$username."&mail=".$email);
         exit();
     } else if (!filter_var($email, FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z0-9]*$/", $username)) { 
-        //If none of the info user enters is correct 
+        //Invalid user id or email format 
         header("Location: ../signup.php?error=invalidemail&uid");
         exit();
     } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        
         header("Location: ../signup.php?error=invalidemail&uid=".$username);
         exit();
     } else if (!preg_match("/^[a-zA-Z0-9]*$/", $username)) { //pregmatic 
